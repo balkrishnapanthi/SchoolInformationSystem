@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SchoolInformationSystem/.vs/SchoolInformationSystem
+/.vs/ScoolInformationSystem/v17/.wsuo
+/.vs
+/SchoolInformationSystem/SchoolInformationSystem/x64/Debug
+/SchoolInformationSystem/x64/Debug
