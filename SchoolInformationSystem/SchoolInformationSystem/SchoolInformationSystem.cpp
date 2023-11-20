@@ -5,16 +5,18 @@
 #include <string>
 #include "Student.h"
 #include "Files.h"
+#include "Crud.h"
 
 
 int main()
 {
-    Student std1;
+    /*Student std1;
     Files file;
     file.ReadFile("CsvFiles/example.txt");
     std1.PrintStudent();
-    std::cout << "Hello World!\n";
-
+    std::cout << "Hello World!\n";*/
+    Crud crud;
+    crud.RunCrud();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
