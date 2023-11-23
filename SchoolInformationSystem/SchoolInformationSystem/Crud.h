@@ -121,18 +121,19 @@ class Crud {
 
     public :
     int RunCrud() {
-        fstream file("users.csv", ios::in | ios::out | ios::app);
+        //fstream file("users.csv", ios::in | ios::out | ios::app);
 
-        if (!file.is_open()) {
-            cerr << "Error opening file.\n";
-            return 1;
-        }
+       
 
         int choice;
         do {
             displayMenu();
             cin >> choice;
-
+            fstream file("users.csv", ios::in | ios::out | ios::app);
+            if (!file.is_open()) {
+                cerr << "Error opening file.\n";
+                return 1;
+            }
             switch (choice) {
             case 1:
                 createUser(file);
@@ -140,6 +141,7 @@ class Crud {
             case 2:
                 file.seekg(0); // Move the file pointer to the beginning of the file
                 readUsers(file);
+                file.close();
                 break;
             case 3:
                 file.seekg(0);
@@ -148,17 +150,18 @@ class Crud {
             case 4:
                 file.seekg(0);
                 deleteUser(file);
-                file.open("users.csv", ios::in | ios::out | ios::app); // Reopen the file after deletion
+                //file.open("users.csv", ios::in | ios::out | ios::app); // Reopen the file after deletion
                 break;
             case 5:
                 cout << "Exiting program.\n";
                 break;
             default:
                 cout << "Invalid choice. Please try again.\n";
+                file.close();
             }
         } while (choice != 5);
 
-        file.close();
+        //file.close();
 
         return 0;
     }

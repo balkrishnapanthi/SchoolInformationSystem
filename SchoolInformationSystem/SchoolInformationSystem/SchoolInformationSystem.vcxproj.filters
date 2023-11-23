@@ -34,6 +34,21 @@
     <Filter Include="Crud">
       <UniqueIdentifier>{78489934-4f98-4c92-abb7-71f8e594104e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="User">
+      <UniqueIdentifier>{3bb57382-db14-4526-bd31-3a52c729392a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Teacher">
+      <UniqueIdentifier>{d6bebc81-d621-4ada-a3e5-3f31db441bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Teacher">
+      <UniqueIdentifier>{55cf578f-e46e-487a-9a4f-5e95538683db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parent">
+      <UniqueIdentifier>{cc555fe1-4bfb-4556-bbad-3942c9f89c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CSVFile">
+      <UniqueIdentifier>{e22bba41-56c3-4a82-86d0-7c38d26f178e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SchoolInformationSystem.cpp">
@@ -51,6 +66,15 @@
     <ClCompile Include="Crud.cpp">
       <Filter>Crud</Filter>
     </ClCompile>
+    <ClCompile Include="Teacher.cpp">
+      <Filter>Teacher</Filter>
+    </ClCompile>
+    <ClCompile Include="Parent.cpp">
+      <Filter>Parent</Filter>
+    </ClCompile>
+    <ClCompile Include="CSVFile.cpp">
+      <Filter>CSVFile</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Files.h">
@@ -63,6 +87,18 @@
       <Filter>Header Files\Student</Filter>
     </ClInclude>
     <ClInclude Include="Crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Teacher.h">
+      <Filter>Header Files\Teacher</Filter>
+    </ClInclude>
+    <ClInclude Include="Parent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSVFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
